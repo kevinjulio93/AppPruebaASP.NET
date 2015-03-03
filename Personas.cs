@@ -19,7 +19,8 @@ public class Personas
         public String Telefono { get; set; }
         public String Email { get; set; }
         #endregion
-        public Personas (){
+        
+    public Personas (){
 
             id="";
             nombre="";
