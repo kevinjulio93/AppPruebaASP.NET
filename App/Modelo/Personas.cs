@@ -17,7 +17,6 @@ namespace App.Modelo
         private string email;
         #endregion
 
-
         #region "Propiedades"
         public String Id { get; set; }
         public String Nombre { get; set; }
@@ -26,14 +25,15 @@ namespace App.Modelo
         public String Email { get; set; }
         #endregion
 
+        #region "constructores"
         public Personas()
         {
 
-            id = "";
-            nombre = "";
-            direccion = "";
-            telefono = "";
-            email = "";
+            id = "1111";
+            nombre = "kevin";
+            direccion = "asdasdv w34 wsdqd";
+            telefono = "66666666";
+            email = "sdfs@sdfs.com";
         }
 
         public Personas(String id, String nombre, String direccion, String telefono, String email)
@@ -45,7 +45,9 @@ namespace App.Modelo
             this.telefono = telefono;
             this.email = email;
         }
+        #endregion
 
+        #region "ToString"
         public override string ToString()
         {
 
@@ -55,6 +57,7 @@ namespace App.Modelo
         }
 
         public override int GetHashCode() { return this.ToString().GetHashCode(); }
+        #endregion
 
 
 

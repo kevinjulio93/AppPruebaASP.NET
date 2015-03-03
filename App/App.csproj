@@ -58,10 +58,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="web\Default.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modelo\Personas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="web\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
@@ -73,7 +81,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datos\" />
-    <Folder Include="web\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
