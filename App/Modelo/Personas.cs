@@ -9,7 +9,7 @@ namespace App.Modelo
     {
 
 
-        #region "Atributos kevin"
+        #region "Atributos kevin julio"
         private string id;
         private string nombre;
         private string direccion;
