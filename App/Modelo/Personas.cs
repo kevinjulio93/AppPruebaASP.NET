@@ -24,7 +24,7 @@ namespace App.Modelo
         public String Telefono { get; set; }
         public String Email { get; set; }
         #endregion
-
+            
         #region "constructores"
         public Personas()
         {
@@ -51,7 +51,7 @@ namespace App.Modelo
         public override string ToString()
         {
 
-            return "Id: " + this.id + "nombre: " + this.nombre + "direccion: " + this.direccion + "telefono: " + this.telefono + "email: " + this.email;
+            return "Id: " + this.id + "\nnombre: " + this.nombre + "\ndireccion: " + this.direccion + "\ntelefono: " + this.telefono + "\nemail: " + this.email;
 
 
         }
